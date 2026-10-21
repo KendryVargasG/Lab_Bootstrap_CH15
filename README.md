@@ -1,3 +1,5 @@
+Generation Colombia. Trabajo individual / Estudiante: Kendry Y. Vargas Gaviria
+Link de GitHub Pages:
 # 🧺 Taller de Bootstrap · Sabores de la Plaza
 
 Generation Colombia · Cohorte 15 · Bootstrap 5 · Taller calificable
