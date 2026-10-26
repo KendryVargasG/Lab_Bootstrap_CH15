@@ -13,27 +13,250 @@ Ejercicio 01 · Bootstrap instalado (en las TRES páginas)
   - El esqueleto de siempre, con el <meta name="viewport">.
   - En el <head>: el CSS de Bootstrap 5 (cópialo de la documentación)
     y DESPUÉS tu <link href="styles.css" rel="stylesheet">.
-  - Al final del <body>: el <script> de bootstrap.bundle.min.js.
+  - Al final del <body>: el <script> de bootstrap.bundle.min.js.-->
+<!-- ========================================================================-->
 
+<!--
 Ejercicio 02 · Barra de navegación (idéntica en las TRES páginas)
   - Una navbar con navbar-expand-lg, la marca "Sabores de la Plaza"
     (clase navbar-brand) y el botón navbar-toggler para el celular.
   - El data-bs-target del botón apunta al id del div collapse.
-  - Enlaces a index.html, puestos.html y contacto.html.
+  - Enlaces a index.html, puestos.html y contacto.html. -->
+<!-- ========================================================================-->
 
+<!--
 Ejercicio 03 · La bienvenida (solo en esta página)
   - Un banner (hero) con el único <h1> de esta página, una frase y un
     botón (clase btn) que lleve a puestos.html o a contacto.html.
   - Una fila con 3 o 4 bloques de presentación (fresco, local,
     hecho a mano…): uno debajo del otro en el celular y todos en
     una sola fila en el computador.
-  - Un <footer> con los datos del colectivo.
+  - Un <footer> con los datos del colectivo. -->
+<!-- ========================================================================-->
 
+<!--
 Ejercicio 07 · El carrusel (aquí o en puestos.html)
   - El cliente quiere "fotos que pasen solas". Búscalo en
     Components → Carousel. Al menos 3 fotos, cada una con alt.
-  - En plaza/img/ tienes 3 imágenes listas para usar.
+  - En plaza/img/ tienes 3 imágenes listas para usar. -->
+<!-- ========================================================================-->
 
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sabores de la Plaza || Inicio</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+      Sabores de la Plaza
+      </a>
+
+     <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuNavbar"
+        aria-controls="menuNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuNavbar">
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            Inicio
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="puestos.html">
+            Puestos
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">
+            Contacto
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+
+<header class="container text-center py-5">
+
+    <h1>Sabores de la Plaza</h1>
+
+    <p class="lead">
+        Productos frescos de nuestra tierra, preparados con tradición,
+        amor y el sabor auténtico de Bello.
+    </p>
+
+    <a href="puestos.html" class="btn btn-primary">
+        Conoce nuestra plaza
+    </a>
+
+</header>
+
+<section class="container my-5">
+
+    <div
+        id="carruselPlaza"
+        class="carousel slide"
+        data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img
+                    src="img/frutas.svg"
+                    class="d-block w-100"
+                    alt="Frutas frescas de la plaza">
+            </div>
+
+            <div class="carousel-item">
+                <img
+                    src="img/pan.svg"
+                    class="d-block w-100"
+                    alt="Pan artesanal recién horneado">
+            </div>
+
+            <div class="carousel-item">
+                <img
+                    src="img/cafe.svg"
+                    class="d-block w-100"
+                    alt="Café tradicional colombiano">
+            </div>
+
+        </div>
+
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carruselPlaza"
+            data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carruselPlaza"
+            data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+    </div>
+
+</section>
+
+<section class="container my-5">
+
+    <div class="row g-4">
+
+        <div class="col-12 col-md-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <h3>Fresco</h3>
+                    <p>
+                        Frutas, verduras y alimentos seleccionados cada día.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <h3>De nuestra tierra</h3>
+                    <p>
+                        Apoyamos a productores locales y al campo antioqueño.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <h3>Hecho con amor</h3>
+                    <p>
+                        Preparaciones artesanales con recetas tradicionales.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <h3>A buen precio</h3>
+                    <p>
+                        Calidad, sabor y economía para toda la familia.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="bg-dark text-white text-center p-4">
+
+    <h5>Sabores de la Plaza</h5>
+
+    <p>Calle 48 N° 22 -30, Plaza Central de Bello</p>
+
+    <p>contacto@saboresdelaplaza.com</p>
+
+    <p>Linea Fija: (604) 444 44 04 || Linea Corporativa: 300 123 4567</p>
+
+</footer>
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
+
+
+
+<!--
 Ejercicio 08 · La letra (en las TRES páginas)
   - El <link> de Google Fonts con tu fuente, en el <head>.
 ============================================================
