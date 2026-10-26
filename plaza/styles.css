@@ -18,7 +18,33 @@ La paleta es tuya: colores cálidos de plaza de mercado.
 ============================================================
 */
 
+:root{
+    --bs-primary: #4f8a3f;
+    --bs-primary-rgb: 79, 138, 63;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
 
 :root{
-    --color-principal: #4f8a3f;
+    --verde-plaza: #4f8a3f;
+}
+
+.navbar{
+    background-color: var(--verde-plaza) !important;
+}
+
+.btn-primary{
+    background-color: var(--verde-plaza);
+    border-color: var(--verde-plaza);
+}
+
+.btn-primary:hover{
+    background-color: #3f7032;
+    border-color: #3f7032;
+}
+
+h1,h2,h3,h4,h5{
+    color: var(--verde-plaza);
 }
